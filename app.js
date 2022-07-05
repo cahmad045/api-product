@@ -33,7 +33,7 @@ mongoose.connect(url, {
 //     res.send("Welcome to <h2>Babar-Fitness-Studio</h2>");
 // });
 //Fetch all data from Db
-app.get('/', async (req, res) => {
+app.get('/getProducts', async (req, res) => {
     const data = await Product.find();
     res.send(data);      
 });
